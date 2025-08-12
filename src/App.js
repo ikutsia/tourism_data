@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import DataSolutions from './components/DataSolutions';
+import WhoWeServe from './components/WhoWeServe';
+import DataInsights from './components/DataInsights';
+import WhoWeAre from './components/WhoWeAre';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App min-h-screen bg-gray-50">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <DataSolutions />
+              <WhoWeServe />
+              <DataInsights />
+              <WhoWeAre />
+              <Contact />
+            </>
+          } />
+          <Route path="/data-solutions" element={<DataSolutions />} />
+          <Route path="/who-we-serve" element={<WhoWeServe />} />
+          <Route path="/data-insights" element={<DataInsights />} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
