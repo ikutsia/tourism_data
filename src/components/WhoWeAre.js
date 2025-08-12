@@ -3,7 +3,6 @@ import {
   Building2, 
   Target, 
   Users, 
-  Award, 
   Globe, 
   Shield,
   Heart,

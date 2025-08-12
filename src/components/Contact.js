@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import { 
   Phone, 
   Mail, 
-  MapPin, 
   Clock, 
   Send, 
   MessageSquare,
-  Globe,
   Building2,
   Users,
   CheckCircle

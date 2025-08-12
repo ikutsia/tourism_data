@@ -7,7 +7,6 @@ import {
   Car, 
   Ship,
   Users,
-  TrendingUp,
   Star,
   CheckCircle
 } from 'lucide-react';

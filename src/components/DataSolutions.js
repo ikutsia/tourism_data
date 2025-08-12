@@ -1,7 +1,6 @@
 import React from "react";
 import {
   BarChart3,
-  TrendingUp,
   Globe,
   Users,
   MapPin,

@@ -2,7 +2,6 @@ import React from 'react';
 import { 
   Lightbulb, 
   TrendingUp, 
-  TrendingDown, 
   Globe, 
   Calendar,
   BarChart3,
